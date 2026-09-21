@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+  Dra. Nicole Helena - Psicóloga
+  Projeto didático do curso de Web Design.
+  Estrutura: header, hero, motivos, abordagens, processo, sobre, contato, footer.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Nicole Helena - Psicóloga</title>
+  <meta name="description" content="Psicóloga clínica. Atendimento individual, de casal e online, com escuta ética e sem julgamentos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav">
+      <div class="logo">🧠 Dra. Nicole Helena</div>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <ul id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#motivos">Por que terapia</a></li>
+        <li><a href="#abordagens">Abordagens</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Nem toda história precisa ser contada sozinha.</h1>
+        <p class="hero-copy">Sou a psicóloga Nicole Helena. Ofereço um espaço de escuta atenta e sem julgamentos, para você entender o que sente e encontrar o seu próprio caminho.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn primary">Marcar uma conversa inicial</a>
+          <a href="#abordagens" class="btn ghost">Conhecer o trabalho</a>
+        </div>
+      </div>
+      <div class="hero-breathe" aria-hidden="true">
+        <div class="breathe-circle"></div>
+        <p class="breathe-caption">Enquanto lê, respire fundo.<br>Você está em um lugar seguro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE TE TROUXE ATÉ AQUI -->
+  <section id="motivos">
+    <div class="container">
+      <h2>O que te trouxe até aqui?</h2>
+      <p class="subtitle">Você não precisa ter certeza de nada para começar uma conversa</p>
+
+      <ul class="motivos-lista">
+        <li>A ansiedade virou companhia de quase todos os dias.</li>
+        <li>Um luto que ainda pesa, mesmo depois de um tempo.</li>
+        <li>Relacionamentos que parecem sempre repetir o mesmo roteiro.</li>
+        <li>A sensação de ter perdido contato com quem você é.</li>
+        <li>Dizer não virou uma tarefa quase impossível.</li>
+        <li>Um cansaço que nem uma boa noite de sono resolve mais.</li>
+      </ul>
+
+      <p class="motivos-fechamento">Se alguma dessas frases fez sentido, talvez seja hora de conversar. <a href="#contato">Vamos marcar um horário</a>.</p>
+    </div>
+  </section>
+
+  <!-- ABORDAGENS / SERVIÇOS -->
+  <section id="abordagens" style="background:#fff;">
+    <div class="container">
+      <h2>Como posso te ajudar</h2>
+      <p class="subtitle">Atendimento pensado para diferentes momentos e necessidades</p>
+      <div class="grid">
+        <article class="card tint-a">
+          <div class="icon">🌱</div>
+          <h3>Terapia individual</h3>
+          <p>Um espaço só seu, para olhar para dentro com calma e sem pressa.</p>
+        </article>
+        <article class="card tint-b">
+          <div class="icon">🤝</div>
+          <h3>Terapia de casal</h3>
+          <p>Para casais que querem se entender melhor e reconstruir a comunicação.</p>
+        </article>
+        <article class="card tint-a">
+          <div class="icon">💻</div>
+          <h3>Atendimento online</h3>
+          <p>Sessões por vídeo, com a mesma atenção e cuidado do consultório presencial.</p>
+        </article>
+        <article class="card tint-b">
+          <div class="icon">💬</div>
+          <h3>Sessão de orientação</h3>
+          <p>Uma primeira conversa, sem compromisso, para entender se faz sentido seguirmos juntos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="container">
+      <h2>Como funciona o primeiro passo</h2>
+      <ol class="processo">
+        <li>
+          <span class="processo-numero">1</span>
+          <div>
+            <h3>Contato inicial</h3>
+            <p>Envie uma mensagem contando um pouco do que você busca.</p>
+          </div>
+        </li>
+        <li>
+          <span class="processo-numero">2</span>
+          <div>
+            <h3>Conversa inicial</h3>
+            <p>Nos conhecemos, sem compromisso, para alinhar expectativas.</p>
+          </div>
+        </li>
+        <li>
+          <span class="processo-numero">3</span>
+          <div>
+            <h3>Acompanhamento</h3>
+            <p>Definimos juntos a frequência e o formato que fazem sentido pra você.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" style="background:#fff;">
+    <div class="container sobre-grid">
+      <div class="sobre-foto" aria-hidden="true">NH</div>
+      <div>
+        <h2 class="align-left">Sobre mim</h2>
+        <p>Sou psicóloga clínica e acredito que toda mudança começa por uma conversa honesta. Meu trabalho é criar um espaço ético, seguro e sem julgamentos, para que você entenda melhor suas emoções e encontre o seu próprio ritmo.</p>
+        <p>Atendo adultos e casais, presencialmente e online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <h2>Fale comigo</h2>
+      <p class="subtitle">Preencha e retorno em breve</p>
+      <form class="contact" id="formContato" novalidate>
+        <div>
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome" />
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="voce@email.com" />
+        </div>
+        <div>
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como posso ajudar?"></textarea>
+        </div>
+        <button type="submit" class="btn primary">Enviar mensagem</button>
+        <p class="contato-sigilo">As informações enviadas por aqui são tratadas com sigilo e confidencialidade.</p>
+        <div class="mensagem-feedback" id="feedback"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="ano"></span> Dra. Nicole Helena - Psicóloga — Todos os direitos reservados.</p>
+    <p>Projeto educacional do curso de Web Design.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
